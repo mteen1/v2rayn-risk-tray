@@ -1,0 +1,11 @@
+[Unit]
+Description=v2rayN exit IP and Scamalytics tray
+After=graphical-session.target
+
+[Service]
+ExecStart=/usr/bin/python3 @INSTALL_DIR@/v2rayn-risk-tray.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target
